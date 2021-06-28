@@ -44,7 +44,7 @@ export function Room() {
         avatar: user.avatar
       },
       isHighlighted: false,
-      inAnswered: false
+      isAnswered: false
     }
 
     await database.ref(`rooms/${roomId}/questions`).push(question)
@@ -103,6 +103,8 @@ export function Room() {
                 key={question.id}
                 content={question.content}
                 author={question.author}
+                isAnswered={question.isAnswered}
+                isHighlighted={question.isHighlighted}
               >
                 <button
                   className={`like-button ${question.likeId ? 'liked' : ''}`}

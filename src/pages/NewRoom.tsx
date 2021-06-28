@@ -20,7 +20,7 @@ export function NewRoom() {
     e.preventDefault()
 
     /* trim remove os espaços */
-    if (newRoom.trim() == '') { 
+    if (newRoom.trim() === '') { 
       return
     }
 

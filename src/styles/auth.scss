@@ -5,8 +5,8 @@
 
   aside {
     flex: 7;
-
-    background: #835afd;
+    background: linear-gradient(135deg, #e12d1e, #90190e);
+    // background: #90190e;
     color: #fff;
 
     display: flex;
@@ -92,15 +92,15 @@
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #ea4335;
-    color: #fff;
+    background: #fff;
+    color: #000;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     cursor: pointer;
-    border: 0;
+    border: 1px solid #90190e;
 
     transition: filter 0.2s;
 

@@ -52,8 +52,6 @@ export function useRoom(roomId: string) {
         }
       })
 
-      console.log(parsedQuestions)
-
       setTitle(databaseRoom.title)
       setQuestions(parsedQuestions)
     })
